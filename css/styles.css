@@ -1,0 +1,482 @@
+@font-face {
+    font-family: "Tokyo";
+    src: url(../fonts/Tokyo-Regular.ttf);
+  }
+  @font-face {
+    font-family: "Akzidenz-Grotesk BQ";
+    src: url(../fonts/AkzidenzGroteskBQ-Reg.ttf);
+  }
+  @font-face {
+    font-family: "Roboto";
+    src: url(../fonts/Roboto-Regular.ttf);
+  }
+
+.abajo {
+  padding-top: 60vh;
+}
+
+
+.abajo2{
+  padding-top: 25vmin; 
+}
+
+  
+.navbar-abajo{
+  padding-top: 2vmin;
+}
+
+.akz{
+  font-family: Akzidenz-Grotesk BQ;
+}
+
+
+.tokyo{
+  font-family: Tokyo;
+}
+
+.roboto{
+  font-family: Roboto;
+  font-weight: bold;
+  color: black;
+}
+
+.fondo {
+  background-image: url("../images/burga.jpg");
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-position:center;
+  margin:0;
+}
+
+@media screen and (max-height: 450px) {
+  .fondo {background-position: bottom;}
+}
+
+.fondo2 {
+  background-image: url("../images/naranjatexturizado.png");
+  background-repeat:no-repeat;
+  background-size: cover;
+  margin:0;
+}
+
+.fondo3 {
+  background-image: url("../images/dirt-2.png");
+  background-repeat:no-repeat;
+  background-size: cover;
+  margin:0;
+}
+
+.fondo4 {
+  background-image: url("../images/dirt-2.png");
+  background-repeat:no-repeat;
+  background-size: cover;
+  margin:0;
+}
+
+.fondo5 {
+  background-image: url("../images/dirt-2.png");
+  background-repeat:no-repeat;
+  background-size: cover;
+  margin:0;
+}
+
+.fondo6 {
+  background-image: url("../images/dirt-2.png");
+  background-repeat:no-repeat;
+  background-size: cover;
+  margin:0;
+}
+
+.fondo7 {
+  background-image: url("../images/dibujos.jpg");
+  background-repeat:no-repeat;
+  background-size: cover;
+  margin:0;
+}
+
+.fondo8 {
+  background-image: url("../images/fondo5.png");
+  background-repeat:no-repeat;
+  background-size: cover;
+  margin:0;
+}
+
+.wrapper {
+  display: block;
+}
+
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* top layer */
+    z-index: 9999;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    /* full screen */
+    width: 100vw;
+    height: 100vh;
+    /* transparent black */
+    background: rgba(0, 0, 0, 0.7);
+    /* middle layer, i.e. appears below the sidebar */
+    z-index: 998;
+    opacity: 0;
+    /* animate the transition */
+    transition: all 0.5s ease-in-out;
+}
+/* display .overlay when it has the .active class */
+.overlay.active {
+    display: block;
+    opacity: 1;
+}
+
+#dismiss {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    /* top right corner of the sidebar */
+    top: 10px;
+    right: 10px;
+}
+
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 2; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 5vh;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: white;
+}
+
+.justi{
+  text-align: justify;
+  text-justify: inter-word;
+}
+.papas{
+    border-radius: 25px;
+    max-width: 70vmin;
+    width: 100%;
+    height: auto;
+}
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.sidenav-style{
+  background-color: #FF771C;
+  font-family: Tokyo;
+}
+
+.icon-size{
+  width: 100%;
+  height: auto;
+}
+
+.centrar{
+  text-align: center;
+}
+
+.centrar-boton{
+    display: flex;
+    align-items: center;
+}
+
+.btn-orange { 
+  background-color:#FF8125; 
+  font-family: Tokyo; border-radius: 100px;
+  color: black; 
+  text-align:center; 
+  margin: 0; 
+}
+
+.btn-circle {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 1.428571429;
+  border-radius: 15px;
+  border-color: #FF771C;
+  color: #FF771C;
+  background-color: transparent;
+}
+.btn-circle.btn-lar {
+  width: 50px;
+  height: 50px;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 25px;
+}
+.btn-circle.btn-xlar {
+  width: 70px;
+  height: 70px;
+  padding: 10px 16px;
+  font-size: 24px;
+  line-height: 1.33;
+  border-radius: 35px;
+}
+
+.btn-white { 
+  background-color:white; 
+  font-family: Tokyo; border-radius: 100px;
+  color: black; 
+  text-align:center; 
+  margin: 0; 
+}
+
+.btn-black {
+  background-color:black; font-family: Tokyo; border-radius: 100px; 
+  color: white; 
+  text-align:center; 
+  margin: 0; 
+}
+
+.mujer{
+  width: 40vmin;
+  height: auto;
+  border-radius: 25px;
+}
+
+.mujer-centrar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fp-slidesNav {
+  position: absolute;
+  z-index: 4;
+  opacity: 1;
+  -webkit-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  left: 0 !important;
+  right: 0;
+  margin: 0 auto !important;
+}
+
+.fp-slidesNav.bottom {
+  bottom: 25px;
+}
+
+.marquee {
+  margin: 0 auto;
+  white-space: nowrap;
+  overflow: hidden;
+  position: absolute;
+}
+
+.marquee.down {
+  margin: 0 auto;
+  white-space: nowrap;
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+}
+
+.marquee span {
+  display: inline-block;
+  padding-left: 100%;
+  animation: marquee 20s linear infinite;
+}
+
+.marquee2 span {
+  animation-delay: 10s;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+
+.texto-borde {
+  -webkit-text-stroke: 4px #50311C;
+  color: transparent;
+  font-family: Tokyo;
+}
+
+@media (max-width: 767px) {
+  .carousel-inner .carousel-item > div {
+      display: none;
+  }
+  .carousel-inner .carousel-item > div:first-child {
+      display: block;
+  }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+  display: flex;
+}
+
+/* medium and up screens */
+@media (min-width: 768px) {
+  
+  .carousel-inner .carousel-item-end.active,
+  .carousel-inner .carousel-item-next {
+    transform: translateX(25%);
+  }
+  
+  .carousel-inner .carousel-item-start.active, 
+  .carousel-inner .carousel-item-prev {
+    transform: translateX(-25%);
+  }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start { 
+transform: translateX(0);
+}
+
+.rotate {
+  /* FF3.5+ */
+  -moz-transform: rotate(-35.0deg);
+  /* Opera 10.5 */
+  -o-transform: rotate(-35.0deg);
+  /* Saf3.1+, Chrome */
+  -webkit-transform: rotate(-35.0deg);
+  /* IE6,IE7 */
+  filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=0.035);
+  /* IE8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0.035)";
+  /* Standard */
+  transform: rotate(-35.0deg);
+
+  z-index: 5;
+}
+
+.contenido-principal {
+	margin-bottom: 50px;
+	display: flex;
+	align-items: center;
+}
+
+.contenido-principal__imagen {
+	vertical-align: top;
+	margin-right: 20px;
+	width: 50%;
+	max-width: 550px;
+}
+
+.contenido-principal__contenedor {
+	width: 50%;
+}
+
+.contenido-principal__titulo {
+	font-weight: normal;
+	font-size: 28px;
+}
+
+.contenido-principal__resumen {
+	font-family: 'Open Sans', sans-serif;
+	line-height: 30px;
+	color: #CFCFCF;
+}
+
+/* --- --- CAROUSEL --- --- */
+.carousel__contenedor {
+	position: relative;
+}
+
+.carousel__anterior,
+.carousel__siguiente {
+	position: absolute;
+	display: block;
+	width: 30px;
+	height: 30px;
+	border: none;
+	top: calc(50% - 35px);
+	cursor: pointer;
+	line-height: 30px;
+	text-align: center;
+	background: none;
+	color: #fff;
+	opacity: 20%;
+}
+
+.carousel__anterior:hover,
+.carousel__siguiente:hover {
+	opacity: 100%;
+}
+
+.carousel__anterior {
+	left: -30px;
+}
+
+.carousel__siguiente {
+	right: -30px;
+}
+
+.carousel__lista {
+	overflow: hidden;
+}
+
+.carousel__elemento {
+	text-align: center;
+}
+
+.carousel__indicadores .glider-dot {
+	display: block;
+	width: 30px;
+	height: 4px;
+	background: #fff;
+	opacity: .2;
+	border-radius: 0;
+}
+
+.carousel__indicadores .glider-dot:hover {
+	opacity: .5;
+}
+
+.carousel__indicadores .glider-dot.active {
+	opacity: 1;
+}
